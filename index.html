@@ -1,380 +1,455 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>APPLE</title>
-    <link rel="stylesheet" href="asset/css/bootstrap.min.css">
-    <link rel="stylesheet" href="asset/css/all.css">
-    
-    <style>
-        .container ul li i{
-            color: rgb(248, 167, 16);
-        }
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>APPLE</title>
+            <link rel="stylesheet" href="asset/css/bootstrap.min.css">
+            <link rel="stylesheet" href="asset/css/all.css">
+            
+            <style>
+                .container ul li i{
+                    color: rgb(248, 167, 16);
+                }
+                
+                #sosmed i{
+                    color: gray;
+                }
 
-        #sosmed i{
-            color: gray;
-        }
-    </style>
-</head>
-<body>
-    
-    <!-- Header Section -->
-    <header>
-        <!-- First Header -->
-        <div class="container">
+                #navbarSupportedContent a{
+                    color: white;
+                }
+
+
+                #navbarSupportedContent a:hover{
+                    color: rgb(29, 29, 29);
+                }
+
+
+                #subnav a{
+                    color: gray;
+                }
+
+                a:hover{
+                    color: aqua;
+                }
+
+                @media(max-width: 575.98px){
+                    #search{
+                        scroll-margin-left: 4px;
+                    }
+                }
+
+                @media(max-width: 575.98px){
+                    #search input{
+                        width: 90%;
+                    }
+                }
+            </style>
+        </head>
+        <body>
+            
+            <!-- Header Section -->
+            <header>
+                <!-- First Header -->
+                <div class="container">
+                    <div class="row">
+                        <!-- logo -->
+                        <div class="col-2">
+                            <img src="asset/image/apple.jpg" alt="logo" width="60" height="60" style="padding-top: 5px;" >
+                        </div>
+                        <!-- search bar -->
+                        <div id="search" class="col-9 col-sm-12 col-md-6 col-lg-6">
+                            <nav class="navbar navbar-light">
+                                <form class="form-inline  my-2 my-lg-0 w-100 p-1">
+                                    <input class="w-75 form-control mr-sm-2" type="search" placeholder="Search your product" aria-label="Search">
+                                    <button class="btn btn-secondary my-0 my-sm-0 bg-secondary" type="submit" ><i class="fas fa-search"></i></button>
+                                </form>
+                            </nav>
+                        </div>
+                        <!-- account -->
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="container">
+                                <div class="row">
+                                    <!-- user icon -->
+                                    <div class="col-6 col-md-6 col-lg-6 p-3">
+                                        <i class="fas fa-shopping-cart px-2" style="font-size: 2rem; color: gray;"></i>
+                                        <i class="fas fa-user px-2" style="font-size: 2rem; color: gray;"></i>
+                                    </div>
+                                    <!-- register -->
+                                    <div class="col-6 p-0">
+                                        <p class="text-muted m-0">Welcome...</p>
+                                        <div>
+                                            <span>
+                                                <a href="#" class="float-left">Sign In</a>
+                                                 <p class="float-left">&nbsp;|&nbsp;</p>
+                                                <a href="#" class="float-left">Register</a>
+                                                <div class="clearfix">
+                                                </div>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Second Header -->
+                
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            
+                            <!-- Navigation Bar -->
+                            
+                            <nav class="navbar navbar-expand-lg navbar-light ">
+                                
+                                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                    <span class="navbar-toggler-icon"></span>
+                                </button>
+                                
+                                <div class="collapse navbar-collapse bg-secondary" id="navbarSupportedContent">
+                                    <ul class="navbar-nav mr-auto">
+                                        <li class="nav-item dropdown">
+                                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <i class="d-none d-lg-block d-xl-none" class="fas fa-bars"></i> Semua Kategori
+                                            </a>
+                                            <div class="dropdown-menu" aria-labelledby="navbarDropdown" id="subnav">
+                                                <a class="dropdown-item" href="#">POPULER</a>
+                                                <a class="dropdown-item" href="#">PRODUK TERBARU</a>
+                                                <a class="dropdown-item" href="#">PRODUK REKOMENDASI</a>
+                                            </div>
+                                        </li>
+                                        <li class="nav-item ">
+                                            <a class="nav-link" href="#">Home</a>
+                                        </li>
+                                        <li class="nav-item ">
+                                            <a class="nav-link" href="#">IPhone</a>
+                                        </li>
+                                        <li class="nav-item ">
+                                            <a class="nav-link" href="#">Macbook</a>
+                                        </li>
+                                        <li class="nav-item ">
+                                            <a class="nav-link" href="#">Smart Watch</a>
+                                        </li>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- intro secction -->
+        <section id="intro" class="container">
             <div class="row">
-                <!-- logo -->
-                <div class="col-1">
-                    <img src="asset/image/apple.jpg" alt="logo" width="60" height="60" style="padding-top: 5px;" >
+                <div class="col-12">
+                    <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                          <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                          <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                          <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="asset/image/logo2.jpg" class="d-block w-100" alt="slide pertama">
+                            <div class="carousel-caption d-none d-md-block">
+                              <h5>APPLE</h5>
+                              <p>Number 1 brand of the world.</p>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <img src="asset/image/logo.jpg" class="d-block w-100" alt="slide kedua">
+                            <div class="carousel-caption d-none d-md-block">
+                              <h5 class="text-white">APPLE</h5>
+                              <p>Easy for information.</p>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <img src="asset/image/mobile.jpg" class="d-block w-100" alt="slide ketiga">
+                            <div class="carousel-caption d-none d-md-block">
+                              <h5>APPLE</h5>
+                              <p>Simple, elegan and good.</p>
+                            </div>
+                          </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="sr-only">Next</span>
+                        </a>
+                      </div>
+                      
                 </div>
-                <!-- search bar -->
-                <div id="search" class="col-7">
-                    <nav class="navbar navbar-light bg-light">
-                        <form class="form-inline  my-2 my-lg-0 w-100 p-1">
-                            <input class="w-75 form-control mr-sm-2" type="search" placeholder="Search your product" aria-label="Search">
-                            <button class="btn btn-secondary my-0 my-sm-0 bg-secondary" type="submit" ><i class="fas fa-search"></i></button>
-                        </form>
-                    </nav>
-                </div>
-                <!-- account -->
-                <div class="col-4">
+            </div>
+        </section>
+
+        <!-- services section -->
+
+        <section class="container">
+            <div class="card">
+                <div class="card-body">
                     <div class="container">
                         <div class="row">
-                            <!-- user icon -->
-                            <div class="col-6 p-3">
-                                <i class="fas fa-shopping-cart" style="font-size: 2rem; color: gray;"></i>
-                                <i class="fas fa-user px-4" style="font-size: 2rem; color: gray;"></i>
+                            <div class="col-sm-12 col-md-12 col-lg-4">
+                                <i class="fas fa-award fa-3x" style="color: gray;"></i>
+                                <h3 class="h5 mt-4">Andalan Dunia</h3>
+                                <p>Brand Apple adalah brand yang sudah mendunia dan menjadi brand andalan mayoritas Negara</p>
                             </div>
-                            <!-- register -->
-                            <div class="col-6" style="float: right;">
-                                <p class="text-muted m-0 pt-2">Welcome...</p>
-                                <div>
-                                    <span>
-                                        <a href="#" style="float: left;">Sign In</a>
-                                        <p class="float-left">&nbsp;|&nbsp;</p>
-                                        <a href="#">Register</a>
-                                        <div class="clearfix"></div>
-                                    </span>
-                                </div>
+                            <div class="col-sm-12 col-md-12 col-lg-4">
+                                <i class="fas fa-shipping-fast fa-3x" style="color: gray;"></i>
+                                <h3 class="h5 mt-4">Free Ongkir</h3>
+                                <p>Jika anda membeli dari wesite anda tidak perlu lagi membayar biaya ongkir karna biaya ongkir  kami tanggung </p>
+                            </div>
+                            <div class="col-sm-12 col-md-12 col-lg-4" >
+                                <i class="fas fa-lock fa-3x" style="color: gray;"></i>
+                                <h3 class="h5 mt-4">Cicilan</h3>
+                                <p>Pembeli dapat membeli product Apple secara credit melalui kartu debit, pembayaran web via bank atau datang ke counter</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        
-        <!-- Second Header -->
-        
-        <div class="container">
+        </section>
+
+        <!-- populer section -->
+
+        <section class="container">
+            <h3>Produk Terpopuler</h3>
             <div class="row">
-                <div class="col-12">
-                    
-                    <!-- Navigation Bar -->
-                    
-                    <nav class="navbar navbar-expand-lg navbar-light ">
+                <div class="col-12 col-sm-4 col-md-6">
+                    <div class="card">
+                        <a href="#" ><img src="asset/image/ipsebelas.jpg"></a>
+                        <div class="card-body">
+                            <a href="#">IPHONE 11 PRO MAX 512GB</a>
+                            <div class="rating">
+                                <ul class="list-inline float-left">
+                                    <li class="list-inline-item"><i class="fas fa-star"></i></li>
+                                    <li class="list-inline-item"><i class="fas fa-star"></i></li>
+                                    <li class="list-inline-item"><i class="fas fa-star"></i></li>
+                                    <li class="list-inline-item"><i class="fas fa-star"></i></li>
+                                    <li class="list-inline-item"><i class="fas fa-star"></i></li>
+                                </ul>
+                            </div>
+                            <span class="pl-3 text-muted">739 Terjual</span>
+                            <div class="clearfix"></div>
+                        </div>
                         
-                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
+                        <div class="harga">
+                            <button  type="button" class="btn btn-secondary btn-block border-0" disabled>Rp.25.400.000</button>
+                            <button class="btn btn-primary btn-block" type="button">BELI</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-4 col-md-6">
+                    <div class="card">
+                        <a href="#" ><img src="asset/image/sewelas.jpg"></a>
+                        <div class="card-body">
+                            <a href="#">IPHONE 11 256GB</a>
+                            <div class="rating">
+                                <ul class="list-inline float-left">
+                                    <li class="list-inline-item"><i class="fas fa-star"></i></li>
+                                    <li class="list-inline-item"><i class="fas fa-star"></i></li>
+                                    <li class="list-inline-item"><i class="fas fa-star"></i></li>
+                                    <li class="list-inline-item"><i class="fas fa-star"></i></li>
+                                    <li class="list-inline-item"><i class="fas fa-star"></i></li>
+                                </ul>
+                            </div>
+                            <span class="pl-3 text-muted">925 Terjual</span>
+                            <div class="clearfix"></div>
+                        </div>
                         
-                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                            <ul class="navbar-nav mr-auto">
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        <i class="fas fa-bars"></i> Semua Kategori
-                                    </a>
-                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                        <a class="dropdown-item" href="#">Action</a>
-                                        <a class="dropdown-item" href="#">Another action</a>
-                                        <div class="dropdown-divider"></div>
-                                        <a class="dropdown-item" href="#">Something else here</a>
-                                    </div>
-                                </li>
-                                <li class="nav-item ">
-                                    <a class="nav-link" href="#">Home</a>
-                                </li>
-                                <li class="nav-item ">
-                                    <a class="nav-link" href="#">IPhone</a>
-                                </li>
-                                <li class="nav-item ">
-                                    <a class="nav-link" href="#">Macbook</a>
-                                </li>
-                                <li class="nav-item ">
-                                    <a class="nav-link" href="#">Smart Watch</a>
-                                </li>
-                            </li>
-                        </ul>
+                        <div class="harga">
+                            <button  type="button" class="btn btn-secondary btn-block border-0" disabled>Rp.12.200.000</button>
+                            <button class="btn btn-primary btn-block" type="button">BELI</button>
+                        </div>
                     </div>
-                </nav>
-            </div>
-        </div>
-    </div>
-</header>
-
-<!-- intro secction -->
-<section id="intro" class="container">
-    <div class="row">
-        <div class="col-12">
-            <img src="asset/image/brnd.jpg" alt="ip" class="img-fluid w-100 ">
-        </div>
-    </div>
-</section>
-
-<!-- services section -->
-
-<section class="container">
-    <div class="card">
-        <div class="card-body">
-            <div class="container">
-                <div class="row">
-                    <div class="col-4">
-                        <i class="fas fa-award fa-3x" style="color: gray;"></i>
-                        <h3 class="h5 mt-4">Andalan Dunia</h3>
-                        <p>Brand Apple adalah brand yang sudah mendunia dan menjadi brand andalan mayoritas Negara</p>
-                    </div>
-                    <div class="col-4">
-                        <i class="fas fa-shipping-fast fa-3x" style="color: gray;"></i>
-                        <h3 class="h5 mt-4">Free Ongkir</h3>
-                        <p>Jika anda membeli dari wesite anda tidak perlu lagi membayar biaya ongkir karna biaya ongkir  kami tanggung </p>
-                    </div>
-                    <div class="col-4" >
-                        <i class="fas fa-lock fa-3x" style="color: gray;"></i>
-                        <h3 class="h5 mt-4">Cicilan</h3>
-                        <p>Pembeli dapat membeli product Apple secara credit melalui kartu debit, pembayaran web via bank atau datang ke counter</p>
+                </div>
+                <div class="col-sm-4 col-md-6 ">
+                    <div class="card">
+                        <a href="#" ><img src="asset/image/ipx.jpg"></a>
+                        <div class="card-body">
+                            <a href="#">IPHONE X 128GB</a>
+                            <div class="rating">
+                                <ul class="list-inline float-left">
+                                    <li class="list-inline-item"><i class="fas fa-star"></i></li>
+                                    <li class="list-inline-item"><i class="fas fa-star"></i></li>
+                                    <li class="list-inline-item"><i class="fas fa-star"></i></li>
+                                    <li class="list-inline-item"><i class="fas fa-star"></i></li>
+                                    <li class="list-inline-item"><i class="fas fa-star"></i></li>
+                                </ul>
+                            </div>
+                            <span class="pl-3 text-muted">983 Terjual</span>
+                            <div class="clearfix"></div>
+                        </div>
+                        
+                        <div class="harga">
+                            <button  type="button" class="btn btn-secondary btn-block border-0" disabled>Rp.11.600.000</button>
+                            <button class="btn btn-primary btn-block" type="button">BELI</button>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-</div>
-</section>
+        </section>
 
-<!-- populer section -->
+        <!-- populer action -->
 
-<section class="container">
-    <h3>Produk Terpopuler</h3>
-    <div class="row">
-        <div class="col-4">
-            <div class="card">
-                <a href="#" ><img src="asset/image/ipsebelas.jpg"></a>
-                <div class="card-body">
-                    <a href="#">IPHONE 11 PRO MAX 512GB</a>
-                    <div class="rating">
-                        <ul class="list-inline float-left">
-                            <li class="list-inline-item"><i class="fas fa-star"></i></li>
-                            <li class="list-inline-item"><i class="fas fa-star"></i></li>
-                            <li class="list-inline-item"><i class="fas fa-star"></i></li>
-                            <li class="list-inline-item"><i class="fas fa-star"></i></li>
-                            <li class="list-inline-item"><i class="fas fa-star"></i></li>
-                        </ul>
+        <section class="container mt-3">
+            <h3>Produk Terbaru</h3>
+            <div class="row">
+                <div class="col-12 col-md-6">
+                    <div class="card">
+                        <a href="#" ><img src="asset/image/se2.jpg"></a>
+                        <div class="card-body">
+                            <a href="#">IPHONE SE 2020 64GB</a>
+                            <div class="rating">
+                                <ul class="list-inline float-left">
+                                    <li class="list-inline-item"><i class="fas fa-star"></i></li>
+                                    <li class="list-inline-item"><i class="fas fa-star"></i></li>
+                                    <li class="list-inline-item"><i class="fas fa-star"></i></li>
+                                    <li class="list-inline-item"><i class="fas fa-star"></i></li>
+                                    <li class="list-inline-item"><i class="fas fa-star"></i></li>
+                                </ul>
+                            </div>
+                            <span class="pl-3 text-muted">983 Terjual</span>
+                            <div class="clearfix"></div>
+                        </div>
+                        
+                        <div class="harga">
+                            <button  type="button" class="btn btn-secondary btn-block border-0" disabled>Rp.7.600.000</button>
+                            <button class="btn btn-danger btn-block" type="button">Stock Habis</button>
+                        </div>
                     </div>
-                    <span class="pl-3 text-muted">739 Terjual</span>
-                    <div class="clearfix"></div>
-                </div>
-                
-                <div class="harga">
-                    <button  type="button" class="btn btn-secondary btn-block border-0" disabled>Rp.25.400.000</button>
-                    <button class="btn btn-primary btn-block" type="button">BELI</button>
                 </div>
             </div>
-        </div>
-        <div class="col-4">
-            <div class="card">
-                <a href="#" ><img src="asset/image/sewelas.jpg"></a>
-                <div class="card-body">
-                    <a href="#">IPHONE 11 256GB</a>
-                    <div class="rating">
-                        <ul class="list-inline float-left">
-                            <li class="list-inline-item"><i class="fas fa-star"></i></li>
-                            <li class="list-inline-item"><i class="fas fa-star"></i></li>
-                            <li class="list-inline-item"><i class="fas fa-star"></i></li>
-                            <li class="list-inline-item"><i class="fas fa-star"></i></li>
-                            <li class="list-inline-item"><i class="fas fa-star"></i></li>
-                        </ul>
-                    </div>
-                    <span class="pl-3 text-muted">925 Terjual</span>
-                    <div class="clearfix"></div>
-                </div>
-                
-                <div class="harga">
-                    <button  type="button" class="btn btn-secondary btn-block border-0" disabled>Rp.12.200.000</button>
-                    <button class="btn btn-primary btn-block" type="button">BELI</button>
-                </div>
-            </div>
-        </div>
-        <div class="col-4">
-            <div class="card">
-                <a href="#" ><img src="asset/image/ipx.jpg"></a>
-                <div class="card-body">
-                    <a href="#">IPHONE X 128GB</a>
-                    <div class="rating">
-                        <ul class="list-inline float-left">
-                            <li class="list-inline-item"><i class="fas fa-star"></i></li>
-                            <li class="list-inline-item"><i class="fas fa-star"></i></li>
-                            <li class="list-inline-item"><i class="fas fa-star"></i></li>
-                            <li class="list-inline-item"><i class="fas fa-star"></i></li>
-                            <li class="list-inline-item"><i class="fas fa-star"></i></li>
-                        </ul>
-                    </div>
-                    <span class="pl-3 text-muted">983 Terjual</span>
-                    <div class="clearfix"></div>
-                </div>
-                
-                <div class="harga">
-                    <button  type="button" class="btn btn-secondary btn-block border-0" disabled>Rp.11.600.000</button>
-                    <button class="btn btn-primary btn-block" type="button">BELI</button>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+        </section>
 
-<!-- populer action -->
+        <!-- Recomend section -->
 
-<section class="container mt-3">
-    <h3>Produk Terbaru</h3>
-    <div class="row">
-        <div class="col-4">
-            <div class="card">
-                <a href="#" ><img src="asset/image/se2.jpg"></a>
-                <div class="card-body">
-                    <a href="#">IPHONE SE 2020 64GB</a>
-                    <div class="rating">
-                        <ul class="list-inline float-left">
-                            <li class="list-inline-item"><i class="fas fa-star"></i></li>
-                            <li class="list-inline-item"><i class="fas fa-star"></i></li>
-                            <li class="list-inline-item"><i class="fas fa-star"></i></li>
-                            <li class="list-inline-item"><i class="fas fa-star"></i></li>
-                            <li class="list-inline-item"><i class="fas fa-star"></i></li>
-                        </ul>
+        <section class="container mt-3">
+            <h3>Rekomendasi</h3>
+            <div class="row">
+                <div class="col-sm-12 col-md-6">
+                    <div class="card">
+                        <a href="#" ><img src="asset/image/ip7.jpg"></a>
+                        <div class="card-body">
+                            <a href="#">IPHONE 7 128GB</a>
+                            <div class="rating">
+                                <ul class="list-inline float-left">
+                                    <li class="list-inline-item"><i class="fas fa-star"></i></li>
+                                    <li class="list-inline-item"><i class="fas fa-star"></i></li>
+                                    <li class="list-inline-item"><i class="fas fa-star"></i></li>
+                                    <li class="list-inline-item"><i class="fas fa-star"></i></li>
+                                    <li class="list-inline-item"><i class="fas fa-star"></i></li>
+                                </ul>
+                            </div>
+                            <span class="pl-3 text-muted">983 Terjual</span>
+                            <div class="clearfix"></div>
+                        </div>
+                        
+                        <div class="harga">
+                            <button  type="button" class="btn btn-secondary btn-block border-0" disabled>Rp.3.400.000</button>
+                            <button class="btn btn-primary btn-block" type="button">BELI</button>
+                        </div>
                     </div>
-                    <span class="pl-3 text-muted">983 Terjual</span>
-                    <div class="clearfix"></div>
                 </div>
-                
-                <div class="harga">
-                    <button  type="button" class="btn btn-secondary btn-block border-0" disabled>Rp.7.600.000</button>
-                    <button class="btn btn-danger btn-block" type="button">Stock Habis</button>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Recomend section -->
-
-<section class="container mt-3">
-    <h3>Rekomendasi</h3>
-    <div class="row">
-        <div class="col-4">
-            <div class="card">
-                <a href="#" ><img src="asset/image/ip7.jpg"></a>
-                <div class="card-body">
-                    <a href="#">IPHONE 7 128GB</a>
-                    <div class="rating">
-                        <ul class="list-inline float-left">
-                            <li class="list-inline-item"><i class="fas fa-star"></i></li>
-                            <li class="list-inline-item"><i class="fas fa-star"></i></li>
-                            <li class="list-inline-item"><i class="fas fa-star"></i></li>
-                            <li class="list-inline-item"><i class="fas fa-star"></i></li>
-                            <li class="list-inline-item"><i class="fas fa-star"></i></li>
-                        </ul>
+                <div class="col-12 col-sm-12 col-md-6">
+                    <div class="card">
+                        <a href="#" ><img src="asset/image/ipxr.jpeg"></a>
+                        <div class="card-body">
+                            <a href="#">IPHONE SE 2020 64GB</a>
+                            <div class="rating">
+                                <ul class="list-inline float-left">
+                                    <li class="list-inline-item"><i class="fas fa-star"></i></li>
+                                    <li class="list-inline-item"><i class="fas fa-star"></i></li>
+                                    <li class="list-inline-item"><i class="fas fa-star"></i></li>
+                                    <li class="list-inline-item"><i class="fas fa-star"></i></li>
+                                    <li class="list-inline-item"><i class="fas fa-star"></i></li>
+                                </ul>
+                            </div>
+                            <span class="pl-3 text-muted">983 Terjual</span>
+                            <div class="clearfix"></div>
+                        </div>
+                        
+                        <div class="harga">
+                            <button  type="button" class="btn btn-secondary btn-block border-0" disabled>Rp.6.700.000</button>
+                            <button class="btn btn-primary btn-block" type="button">BELI</button>
+                        </div>
                     </div>
-                    <span class="pl-3 text-muted">983 Terjual</span>
-                    <div class="clearfix"></div>
                 </div>
-                
-                <div class="harga">
-                    <button  type="button" class="btn btn-secondary btn-block border-0" disabled>Rp.3.400.000</button>
-                    <button class="btn btn-primary btn-block" type="button">BELI</button>
-                </div>
-            </div>
-        </div>
-        <div class="col-4">
-            <div class="card">
-                <a href="#" ><img src="asset/image/ipxr.jpeg"></a>
-                <div class="card-body">
-                    <a href="#">IPHONE SE 2020 64GB</a>
-                    <div class="rating">
-                        <ul class="list-inline float-left">
-                            <li class="list-inline-item"><i class="fas fa-star"></i></li>
-                            <li class="list-inline-item"><i class="fas fa-star"></i></li>
-                            <li class="list-inline-item"><i class="fas fa-star"></i></li>
-                            <li class="list-inline-item"><i class="fas fa-star"></i></li>
-                            <li class="list-inline-item"><i class="fas fa-star"></i></li>
-                        </ul>
+                <div class="col-sm-12 col-md-6">
+                    <div class="card">
+                        <a href="#" ><img src="asset/image/hpip.jpg"></a>
+                        <div class="card-body">
+                            <a href="#">IPHONE 8+ 64GB</a>
+                            <div class="rating">
+                                <ul class="list-inline float-left">
+                                    <li class="list-inline-item"><i class="fas fa-star"></i></li>
+                                    <li class="list-inline-item"><i class="fas fa-star"></i></li>
+                                    <li class="list-inline-item"><i class="fas fa-star"></i></li>
+                                    <li class="list-inline-item"><i class="fas fa-star"></i></li>
+                                    <li class="list-inline-item"><i class="fas fa-star"></i></li>
+                                </ul>
+                            </div>
+                            <span class="pl-3 text-muted">983 Terjual</span>
+                            <div class="clearfix"></div>
+                        </div>
+                        
+                        <div class="harga">
+                            <button  type="button" class="btn btn-secondary btn-block border-0" disabled>Rp.7.000.000</button>
+                            <button class="btn btn-primary btn-block" type="button">BELI</button>
+                        </div>
                     </div>
-                    <span class="pl-3 text-muted">983 Terjual</span>
-                    <div class="clearfix"></div>
-                </div>
-                
-                <div class="harga">
-                    <button  type="button" class="btn btn-secondary btn-block border-0" disabled>Rp.6.700.000</button>
-                    <button class="btn btn-primary btn-block" type="button">BELI</button>
                 </div>
             </div>
-        </div>
-        <div class="col-4">
-            <div class="card">
-                <a href="#" ><img src="asset/image/hpip.jpg"></a>
-                <div class="card-body">
-                    <a href="#">IPHONE 8+ 64GB</a>
-                    <div class="rating">
-                        <ul class="list-inline float-left">
-                            <li class="list-inline-item"><i class="fas fa-star"></i></li>
-                            <li class="list-inline-item"><i class="fas fa-star"></i></li>
-                            <li class="list-inline-item"><i class="fas fa-star"></i></li>
-                            <li class="list-inline-item"><i class="fas fa-star"></i></li>
-                            <li class="list-inline-item"><i class="fas fa-star"></i></li>
-                        </ul>
-                    </div>
-                    <span class="pl-3 text-muted">983 Terjual</span>
-                    <div class="clearfix"></div>
-                </div>
-                
-                <div class="harga">
-                    <button  type="button" class="btn btn-secondary btn-block border-0" disabled>Rp.7.000.000</button>
-                    <button class="btn btn-primary btn-block" type="button">BELI</button>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+        </section>
 
-<!-- partner section -->
+        <!-- partner section -->
 
-<section class="container mt-3">
-    <h3>DI SPONSORI OLEH:</h3>
-                <div class="col-2"><figure class="figure"></figure>
-                    <img src="asset/image/apple.jpg" class="figure-img img-thumbnail rounded" alt="nekopoi">
-                    <figcaption class="figure-caption text-center">Apple</figcaption></div>
-                <div class="col-2"></div>
-                <div class="col-2"></div>
-                <div class="col-2"></div>
-                <div class="col-2"></div>
-                <div class="col-2"></div>
+        <section class="container mt-3">
+            <h3>DI SPONSORI OLEH:</h3>
+            <div class="row">
+                <div class="col-2"><figure class="figure">
+                    <img src="asset/image/apple.jpg" class="figure-img img-thumbnail rounded" alt="apple" width="120">
+                    <figcaption class="figure-caption text-center">Apple</figcaption>
+                </figure>
             </div>
+            <div class="col-2"><figure class="figure">
+                <img src="asset/image/blibli.jpg" class="figure-img img-thumbnail rounded" alt="blibli" width="250">
+                <figcaption class="figure-caption text-center">BLIBLI</figcaption>
+            </figure>
         </div>
-    </div>
-</div>
-</section>
+        <div class="col-2"></div>
+        <div class="col-2"></div>
+        <div class="col-2"></div>
+        <div class="col-2"></div>
+        </div>
+        </div>
+        </div>
+        </div>
+        </section>
 
         <!-- app section -->
-        <section class="container-fluid mt-3 p-5 bg-light">
+        <section class="container-fluid mt-3 p-5">
             <h3>DOWNLOAD APLIKASI</h3>
             <div class="row">
                 <div class="col-12">
-                    <a href="#"><img src="asset/image/ps.png" alt="logo"; width: 300px; height: 10;></a>
-                    <a href="#"><img src="asset/image/apps.png" alt="logo2" width: 250px; height: 10;></a>
-                    </div>
+                    <a href="#"><img src="asset/image/ps.png" alt="logo"  height= "150"></a>
+                    <a href="#"><img src="asset/image/apps.png" alt="logo2"  height="140"></a>
                 </div>
+            </div>
         </section>
 
         <!-- footer section -->
-        <section class="container">
+        <section class="container bg">
             <div class="row">
-                <div class="col-3">
+                <div class="col-6 col-lg-3">
                     <h5>perusahaan</h5>
                     <ul class="list-unstyled">
                         <li><a href="#">Tentang Kami</a></li>
@@ -382,15 +457,15 @@
                         <li><a href="#">Syarat &amp; Ketentuan</a></li>
                     </ul>
                 </div>
-                <div class="col-3">
-                <h5>Bantuan</h5>
+                <div class="col-6 col-lg-3">
+                    <h5>Bantuan</h5>
                     <ul class="list-unstyled">
                         <li><a href="#">Kontak</a></li>
                         <li><a href="#">klaim bonus</a></li>
                         <li><a href="#">info kredit</a></li>
                     </ul>
                 </div>
-                <div class="col-3">
+                <div class="col-6 col-lg-3">
                     <h5>Akun</h5>
                     <ul class="list-unstyled">
                         <li><a href="#">Pengguna akun</a></li>
@@ -398,7 +473,7 @@
                         <li><a href="#">Pengaturan akun</a></li>
                     </ul>
                 </div>
-                <div id="sosmed" class="col-3">
+                <div id="sosmed" class="col-6 col-lg-3">
                     <h5>Sosial Media</h5>
                     <ul class="list-unstyled">
                         <li><a href="#"><i class="fab fa-facebook"></i>Facebook</a></li>
@@ -408,29 +483,33 @@
                 </div>
             </div>
         </section>
-<section class="container mt-3">
-    <div class="row">
-        <div class="col-2">
-            <p>copyright &copy; onee san</p>
+        <section class="container mt-3">
+            <div class="row bg-secondary">
+                <div class="col-2">
+                    <p>copyright &copy;rimkun</p>
+                </div>
+                <div class="col-8">
+                    <ul>
+                        <li class="list-inline-item">info@apple.com</li>
+                        <li>+62895363652521</li>
+                        <li>Green Lake City M59, Cipondoh, Tangerang</li>
+                    </ul>
+                </div>
+                <div class="col-2">
+                    <i class="fab fa-cc-visa fa-2x" style="color: rgb(255, 255, 255);"></i>
+                    <i class="fab fa-cc-paypal fa-2x" style="color: rgb(255, 255, 255);"></i>
+                    <i class="fab fa-cc-mastercard fa-2x" style="color: rgb(255, 255, 255);"></i>
+                </div>
+            </div>
+            
+            
         </div>
-        <div class="col-8">
-            <ul>
-                <li class="list-inline-item">info@apple.com</li>
-                <li>+62895363652521</li>
-                <li>Green Lake City M59, Cipondoh, Tangerang</li>
-            </ul>
-        </div>
-        <div class="col-2">
-            <i class="fab fa-cc-visa"></i>
-        </div>
-    </div>
 
-</section>
+        </section>
 
-<!-- <script src="asset/js/jquery-3.5.1.slim.min.js"></script> -->
-<script src="asset/js/jquery-3.5.1.full.js"></script>
-<script src="asset/js/popper.min.js"></script>
-<script src="asset/js/bootstrap.min.js"></script>
-
-</body>
-</html>
+        <!-- <script src="asset/js/jquery-3.5.1.slim.min.js"></script> -->
+        <script src="asset/js/jquery-3.5.1.full.js"></script>
+        <script src="asset/js/popper.min.js"></script>
+        <script src="asset/js/bootstrap.min.js"></script>
+        </body>
+        </html>
