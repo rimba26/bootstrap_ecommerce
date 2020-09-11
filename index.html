@@ -17,12 +17,12 @@
                 }
 
                 #navbarSupportedContent a{
-                    color: white;
+                    color: rgb(45, 177, 201);
                 }
 
 
                 #navbarSupportedContent a:hover{
-                    color: rgb(29, 29, 29);
+                    color: rgb(19, 16, 16);
                 }
 
 
@@ -31,7 +31,7 @@
                 }
 
                 a:hover{
-                    color: aqua;
+                    color: rgb(88, 88, 88);
                 }
 
                 @media(max-width: 575.98px){
@@ -81,9 +81,9 @@
                                         <p class="text-muted m-0">Welcome...</p>
                                         <div>
                                             <span>
-                                                <a href="#" class="float-left">Sign In</a>
+                                                <a href="login/login.html" class="float-left">Sign In</a>
                                                  <p class="float-left">&nbsp;|&nbsp;</p>
-                                                <a href="#" class="float-left">Register</a>
+                                                <a href="register/register.html" class="float-left">Register</a>
                                                 <div class="clearfix">
                                                 </div>
                                             </span>
@@ -110,30 +110,30 @@
                                 </button>
                                 
                                 <div class="collapse navbar-collapse bg-secondary" id="navbarSupportedContent">
-                                    <ul class="navbar-nav mr-auto">
+                                    <ul id="menu_link" class="navbar-nav mr-auto">
                                         <li class="nav-item dropdown">
                                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                                 <i class="d-none d-lg-block d-xl-none" class="fas fa-bars"></i> Semua Kategori
                                             </a>
-                                            <div class="dropdown-menu" aria-labelledby="navbarDropdown" id="subnav">
-                                                <a class="dropdown-item" href="#">IPHONE</a>
+                                            <div id="menu_dropdown" class="dropdown-menu" aria-labelledby="navbarDropdown" id="subnav">
+                                                <!-- <a class="dropdown-item" href="#">IPHONE</a>
                                                 <a class="dropdown-item" href="#">MACBOOK</a>
-                                                <a class="dropdown-item" href="#">SMWART WATCH</a>
+                                                <a class="dropdown-item" href="#">SMART WATCH</a> -->
                                             </div>
                                         </li>
-                                        <li class="nav-item ">
+                                        <!-- <li class="nav-item ">
                                             <a class="nav-link" href="index.html">Home</a>
                                         </li>
                                         <li class="nav-item ">
-                                            <a class="nav-link" href="populer">POPULER</a>
+                                            <a class="nav-link" href="#populer">Populer</a>
                                         </li>
                                         <li class="nav-item ">
-                                            <a class="nav-link" href="baru">PRODUK TERBARU</a>
+                                            <a class="nav-link" href="#baru">Produk Terbaru</a>
                                         </li>
                                         <li class="nav-item ">
-                                            <a class="nav-link" href="rekomendasi">PRODUK REKOMENDASI</a>
+                                            <a class="nav-link" href="#rekomendasi">Produk Rekomendasi</a>
                                         </li>
-                                    </li>
+                                    </li> -->
                                 </ul>
                             </div>
                         </nav>
@@ -441,7 +441,7 @@
             <div class="row">
                 <div class="col-12">
                     <a href="https://play.google.com/store/apps?hl=in"><img src="asset/image/ps.png" alt="logo"  height= "150"></a>
-                    <a href="#"><img src="asset/image/apps.png" alt="logo2"  height="140"></a>
+                    <a href="https://www.apple.com/ios/app-store/"><img src="asset/image/apps.png" alt="logo2"  height="140"></a>
                 </div>
             </div>
         </section>
@@ -511,5 +511,6 @@
         <script src="asset/js/jquery-3.5.1.full.js"></script>
         <script src="asset/js/popper.min.js"></script>
         <script src="asset/js/bootstrap.min.js"></script>
+        <script src="asset/js/data.js"></script>
         </body>
         </html>
